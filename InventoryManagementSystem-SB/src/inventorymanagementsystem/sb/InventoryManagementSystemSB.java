@@ -37,6 +37,17 @@ public class InventoryManagementSystemSB {
                     " marca " + guitar.getBuilder());
         }
         
+        guitar = new Guitar("", "Tylor", "", "electric", "", "", 0);
+        
+        Guitar searchGuitar = inventario.search(guitar);
+        
+        if (searchGuitar != null) {
+            System.out.println("Se encontró la guitarra " + searchGuitar.getBuilder() + 
+                    " con número de serie " + searchGuitar.getSerialNumber());
+        } else if (searchGuitar == null) {
+            System.out.println("No se encontró la guitarra.");
+        }
+        
     }
     
 }
