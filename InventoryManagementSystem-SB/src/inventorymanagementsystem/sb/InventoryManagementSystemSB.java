@@ -27,7 +27,7 @@ public class InventoryManagementSystemSB {
                 "Cedar", "Cedar");
         inventario.addGuitar("ASDF2345", 1700.00, "PRS", "SE Standard", "electric", 
                 "Cedar", "Cedar");
-        
+        /*
         Guitar guitar = inventario.getGuitar("ASDF234");
         
         if (guitar == null) {
@@ -36,8 +36,8 @@ public class InventoryManagementSystemSB {
             System.out.println("Se encontró la guitarra con serie " + guitar.getSerialNumber() +
                     " marca " + guitar.getBuilder());
         }
-        
-        guitar = new Guitar("", "Tylor", "", "electric", "", "", 0);
+        */
+        Guitar guitar = new Guitar("", "", "", "electric", "", "", 0);
         
         Guitar searchGuitar = inventario.search(guitar);
         
@@ -49,5 +49,4 @@ public class InventoryManagementSystemSB {
         }
         
     }
-    
 }
