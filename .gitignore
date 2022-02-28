@@ -21,3 +21,21 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/InventoryManagementSystem-SA/build/
+/InventoryManagementSystem-SB/build/
+/InventoryManagementSystem-SA/nbproject/private/
+/InventoryManagementSystem-SB/nbproject/private/
+/Abstraccion-SA/nbproject/private/
+/Encapsulamiento-SA_1/nbproject/private/
+/Encapsulamiento-SA_1/build/
+/Abstraccion-SB/nbproject/private/
+/Abstraccion-SB/build/
+/Encapsulamiento-SB/nbproject/private/
+/Encapsulamiento-SA/nbproject/private/
+/Encapsulamiento-SA/build/
+/Herencia-SA/nbproject/private/
+/Herencia-SA/build/
+/Herencia-SA/dist/
+/Herencia-SB/nbproject/private/
+/Herencia-SB/build/
+/Herencia-SB/dist/
