@@ -17,6 +17,7 @@ public class HerenciaSB {
     public static void main(String[] args) {
         // TODO code application logic here
         
+        /*
         Dog billy = new Dog();
         billy.picture = "dog.jpeg";
         billy.makeNoise();
@@ -27,8 +28,17 @@ public class HerenciaSB {
         bubble.picture = "foto_de_hipopotamo.jpeg";
         bubble.makeNoise();
         bubble.roam();
-        bubble.eat();
+        bubble.eat();*/
         
+        Wolf colmilloBlanco = new Wolf();
+        colmilloBlanco.makeNoise();
+        colmilloBlanco.eat();
+        colmilloBlanco.sleep();
+        colmilloBlanco.roam();
+        
+        colmilloBlanco.hunt();
+        colmilloBlanco.hunt("rabbit");
+        colmilloBlanco.hunt(4);
     }
     
 /*

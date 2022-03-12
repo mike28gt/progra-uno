@@ -11,11 +11,11 @@ package herencia.sb;
  */
 public class Lion extends Feline {
     
-    void makeNoise() {
+    public void makeNoise() {
         System.out.println("Grrr!!!");
     }
     
-    void eat() {
+    public void eat() {
         System.out.println("I'm eating meet!");
     }
     

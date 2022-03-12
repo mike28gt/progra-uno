@@ -10,11 +10,11 @@ package herencia.sb;
  * @author miguelcatalan
  */
 public class Dog extends Canine {
-    void makeNoise() {
+    public void makeNoise() {
         System.out.println("Wouf Wouf!!!");
     }
     
-    void eat() {
+    public void eat() {
         System.out.println("I'm eating meet!");
     }
 }

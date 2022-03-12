@@ -10,11 +10,23 @@ package herencia.sb;
  * @author miguelcatalan
  */
 public class Wolf extends Canine {
-    void makeNoise() {
+    public void makeNoise() {
         System.out.println("Ahuuuuuu!!!");
     }
     
-    void eat() {
+    public void eat() {
         System.out.println("I'm eating meet!");
+    }
+    
+    public void hunt() {
+        System.out.println("I'm hunting!");
+    }
+    
+    public void hunt(String animalName) {
+        System.out.println("I'm hunting a " + animalName);
+    }
+    
+    public void hunt(int qtyAnimals) {
+        System.out.println("I've hounted " + qtyAnimals + " animals today");
     }
 }

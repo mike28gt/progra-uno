@@ -10,11 +10,11 @@ package herencia.sb;
  * @author miguelcatalan
  */
 public class Hippo extends Animal {
-    void makeNoise() {
+    public void makeNoise() {
         System.out.println("Hip Hip!!!");
     }
     
-    void eat() {
+    public void eat() {
         System.out.println("I'm eating grass!");
     }
 }

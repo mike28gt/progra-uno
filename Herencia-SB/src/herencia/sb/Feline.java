@@ -10,7 +10,7 @@ package herencia.sb;
  * @author miguelcatalan
  */
 public class Feline extends Animal {
-    void roam() {
+    public void roam() {
         System.out.println("I move alone!!!");
     }
 }
