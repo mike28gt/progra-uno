@@ -10,11 +10,11 @@ package herencia.sa;
  * @author miguelcatalan
  */
 public class Cat extends Feline {
-    void makeNoise() {
+    public void makeNoise() {
         System.out.println("Miau Miau!");
     }
     
-    void eat() {
+    public void eat() {
         System.out.println("meat!");
     }
 }

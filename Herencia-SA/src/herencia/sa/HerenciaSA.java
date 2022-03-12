@@ -16,7 +16,7 @@ public class HerenciaSA {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+        /*
         Cat billy = new Cat();
         billy.makeNoise();
         billy.eat();
@@ -28,9 +28,21 @@ public class HerenciaSA {
         buble.roam();
         
         Wolf colmilloBlanco = new Wolf();
+        colmilloBlanco.setFood("meat");
+        colmilloBlanco.setPicture("lobo.jpeg");
         colmilloBlanco.makeNoise();
         colmilloBlanco.eat();
         colmilloBlanco.roam();
+        colmilloBlanco.sleep();
+        */
+        
+        Lion simba = new Lion();
+        /*
+        simba.hunt();
+        simba.hunt("antilope");
+        simba.hunt(4);
+*/
+        simba.eat();
     
     }
     

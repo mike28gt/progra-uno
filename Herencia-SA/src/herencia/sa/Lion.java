@@ -11,11 +11,30 @@ package herencia.sa;
  */
 public class Lion extends Feline {
     
-    void makeNoise() {
+    public void makeNoise() {
         System.out.println("Grr!");
     }
     
-    void eat() {
+    public void eat() {
         System.out.println("meat!");
+        super.eat();
     }
+    /*
+    public void hunt() {
+        System.out.println("I'm hunting!");
+    }
+    */
+    public void hunt(String animalName) {
+         System.out.println("I'm hunting a " + animalName);
+    }
+    
+    public void hunt(int qtyAnimals) {
+        System.out.println("I have hunt " + qtyAnimals + " animals today");
+    }
+    
+    public String hunt(){
+        System.out.println("Sobrecarga con tipo String");
+        return "Str";
+    }
+    
 }

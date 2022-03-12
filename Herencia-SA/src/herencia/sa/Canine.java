@@ -11,7 +11,12 @@ package herencia.sa;
  */
 public class Canine extends Animal {
     
-    void roam() {
+    
+    public void setFood(String food) {
+        System.out.println("Aquí se sobrescribe (override) el método setFood(String food)");
+    }
+    
+    public void roam() {
         System.out.println("Walk with my pack...");
     }
     

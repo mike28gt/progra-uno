@@ -11,11 +11,11 @@ package herencia.sa;
  */
 public class Wolf extends Canine {
 
-    void makeNoise() {
+    public void makeNoise() {
         System.out.println("Ouhhhh!");
     }
     
-    void eat() {
+    public void eat() {
         System.out.println("meat!");
     }
     

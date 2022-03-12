@@ -11,7 +11,7 @@ package herencia.sa;
  */
 public class Feline extends Animal {
     
-    void roam() {
+    public void roam() {
         System.out.println("Walk alone...");
     }
 }
