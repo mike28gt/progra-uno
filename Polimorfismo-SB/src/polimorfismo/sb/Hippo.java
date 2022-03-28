@@ -17,4 +17,8 @@ public class Hippo extends Animal {
     public void eat() {
         System.out.println("I'm eating grass!");
     }
+    
+    public void roam() {
+        System.out.println("I'm walking with my pack!");
+    }
 }

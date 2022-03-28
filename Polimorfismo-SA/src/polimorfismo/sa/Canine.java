@@ -9,12 +9,7 @@ package polimorfismo.sa;
  *
  * @author miguelcatalan
  */
-public class Canine extends Animal {
-    
-    
-    public void setFood(String food) {
-        System.out.println("Aquí se sobrescribe (override) el método setFood(String food)");
-    }
+public abstract class Canine extends Animal {
     
     public void roam() {
         System.out.println("Walk with my pack...");

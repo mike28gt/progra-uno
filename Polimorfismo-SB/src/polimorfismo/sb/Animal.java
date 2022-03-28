@@ -56,19 +56,13 @@ public abstract class Animal {
         this.location = location;
     }
     
-    public void makeNoise() {
-        System.out.println("Make noise as an... animal?");
-    }
+    public abstract void makeNoise();
     
-    public void eat() {
-        System.out.println("Eat as an... animal?");
-    }
+    public abstract void eat();
     
     public void sleep() {
         System.out.println("Sleep as an... animal?");
     }
     
-    public void roam() {
-        System.out.println("Roam as an... animal?");
-    }
+    public abstract void roam();
 }

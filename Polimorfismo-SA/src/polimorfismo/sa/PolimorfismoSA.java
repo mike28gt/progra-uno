@@ -5,6 +5,8 @@
  */
 package polimorfismo.sa;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author miguelcatalan
@@ -46,15 +48,15 @@ public class PolimorfismoSA {
         
         //Dog myDog = new Dog();
         //myDog.makeNoise();
-        
+        /*
         Canine myDog2 = new Dog();
         Dog myDog3 = new Dog();
         Wolf myWolf = new Wolf();
-        
+        */
         //myDog2.makeNoise();
         //myWolf.makeNoise();
         //myDog3.makeNoise();
-        
+        /*
         Cat[] gato = new Cat[5];
         Dog[] perro = new Dog[5];
         
@@ -65,19 +67,59 @@ public class PolimorfismoSA {
         animals[3] = new Hippo();
         animals[4] = new Lion();
         
-        Vet vet = new Vet();
+        Vet vet = new Vet();*/
         //vet.giveShot(myWolf);
         //vet.giveShot(myDog3);
-        
+        /*
         for (int i = 0; i < animals.length; i++) {
             //animals[i].eat();
             //animals[i].makeNoise();
             vet.giveShot(animals[i]);
-        }
+        }*/
+        /*
+        Dog dog = new Dog();
+        dog.setPicture("perro.jpeg");
+        dog.makeNoise();
+        */
+        /*
+        Animal animal = new Animal();
+        animal.setPicture("");
+        animal.makeNoise();
         
+        Feline feline = new Feline();
+        feline.makeNoise();
         
+        Canine canine = new Canine();
+        canine.makeNoise();
+        */
+        /*
+        MyDogList dogList = new MyDogList();
+        dogList.add(new Dog());
+        dogList.add(new Dog());
+        dogList.add(new Dog());
+        */
+        /*
+        MyAnimalList animalList = new MyAnimalList();
+        animalList.add(new Dog());
+        animalList.add(new Cat());
+        animalList.add(new Wolf());
+        animalList.add(new Lion());
+        */
+        ArrayList<Dog> list = new ArrayList();
+        list.add(new Dog());
+        Dog d = list.get(0);
+        d.makeNoise();
         
+        ArrayList<Object> objectList = new ArrayList();
+        objectList.add(new Dog());
+        objectList.add(new Wolf());
+        objectList.add(new ArrayList());
         
+        Object dog = objectList.get(0);
+        dog.toString();
+        
+        Dog dogCasted = (Dog)objectList.get(0);
+        //dogCasted.
     }
     
 }

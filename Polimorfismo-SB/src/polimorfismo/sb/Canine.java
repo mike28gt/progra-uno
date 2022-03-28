@@ -9,7 +9,7 @@ package polimorfismo.sb;
  *
  * @author miguelcatalan
  */
-public class Canine extends Animal {
+public abstract class Canine extends Animal {
     public void roam() {
         System.out.println("I move with my pack!!!");
     }

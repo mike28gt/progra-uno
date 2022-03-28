@@ -5,6 +5,8 @@
  */
 package polimorfismo.sb;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author miguelcatalan
@@ -50,7 +52,7 @@ public class PolimorfismoSB {
         myDog2.makeNoise();
         myDog3.makeNoise();
         */
-        
+        /*
         Dog[] dogs = new Dog[5];
         dogs[0] = new Dog();
         Cat[] cats = new Cat[5];
@@ -64,13 +66,14 @@ public class PolimorfismoSB {
         animals[4] = new Lion();
         
         Vet vet = new Vet();
+        */
         /*
         vet.giveShot(new Dog());
         vet.giveShot(new Cat());
         vet.giveShot(new Hippo());
         */
         
-        
+        /*
         for (int i = 0; i < animals.length; i++) {
             //animals[i].eat();
             //animals[i].makeNoise();
@@ -80,13 +83,52 @@ public class PolimorfismoSB {
         Animal a = new Dog();
         a.eat();
         a.makeNoise();
+        */
+        /*
+        Dog d = new Dog();
+        d.setPicture("perro.jpeg");
+        d.makeNoise();
         
+        Animal a = new Dog();
+        a.setPicture("perro.jpeg");
+        a.makeNoise();
+        */
+        /*
+        Feline f = new Feline();
+        f.setPicture("");
+        f.makeNoise();
         
+        Canine c = new Canine();
+        c.setPicture("");
+        c.makeNoise();
+        */
+        /*
+        Feline f = new Lion();
+        Animal a2 = new Hippo();
+        */
+        /*
+        MyDogList dogList = new MyDogList();
+        dogList.add(new Dog());
+        dogList.add(new Dog());
+        dogList.add(new Dog());
+        */
+        /*
+        MyAnimalList animalList = new MyAnimalList();
+        animalList.add(new Dog());
+        animalList.add(new Cat());
+        animalList.add(new Hippo());
+        animalList.add(new Wolf());
+        */
+        ArrayList<Dog> dogList = new ArrayList();
+        dogList.add(new Dog());
+        Dog dog = dogList.get(0);
+        dog.eat();
+        dog.makeNoise();
         
-        
-        
-        
-        
+        ArrayList<Object> objectList = new ArrayList();
+        objectList.add(new Dog());
+        Object dog2 = objectList.get(0);
+        Dog dog3 = (Dog)objectList.get(0);
     }
     
 /*
