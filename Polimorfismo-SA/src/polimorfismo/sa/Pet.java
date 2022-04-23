@@ -9,13 +9,7 @@ package polimorfismo.sa;
  *
  * @author miguelcatalan
  */
-public class Wolf extends Canine {
-
-    public void makeNoise() {
-        System.out.println("Ouhhhh!");
-    }
-    
-    public void eat() {
-        System.out.println("meat!");
-    }
+public interface Pet {
+    public abstract void beFriendly();
+    public abstract void play();
 }

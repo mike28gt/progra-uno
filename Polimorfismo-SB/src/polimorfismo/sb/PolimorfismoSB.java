@@ -119,16 +119,53 @@ public class PolimorfismoSB {
         animalList.add(new Hippo());
         animalList.add(new Wolf());
         */
+        /*
         ArrayList<Dog> dogList = new ArrayList();
         dogList.add(new Dog());
         Dog dog = dogList.get(0);
         dog.eat();
         dog.makeNoise();
-        
+        */
+        /*
         ArrayList<Object> objectList = new ArrayList();
         objectList.add(new Dog());
         Object dog2 = objectList.get(0);
         Dog dog3 = (Dog)objectList.get(0);
+        Wolf w1 = new Wolf();
+        
+        if (dog3 instanceof Dog){
+            System.out.println("w1 es de tipo Dog: ");
+        }
+        */
+        
+        
+        Dog d1 = new Dog();
+        d1.beFriendly();
+        d1.play();
+        
+        Pet p1 = new Dog();
+        Pet p2 = new Cat();
+        Pet p3 = new GoldenFish();
+        
+        /*
+        Cat c1 = new Cat(); 
+        c1.beFriendly();
+        c1.play();
+        
+        Hamster h1 = new Hamster();
+        h1.beFriendly();
+        h1.play();
+        
+        
+        Lion l1 = new Lion();
+        
+        Hippo hippo = new Hippo();
+        */
+        
+
+        
+        
+        
     }
     
 /*

@@ -35,5 +35,4 @@ public class Lion extends Feline {
         System.out.println("Sobrecarga con tipo String");
         return "Str";
     }
-    
 }

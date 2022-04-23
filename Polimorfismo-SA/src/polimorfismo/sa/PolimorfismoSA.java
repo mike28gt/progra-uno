@@ -105,6 +105,7 @@ public class PolimorfismoSA {
         animalList.add(new Wolf());
         animalList.add(new Lion());
         */
+        /*
         ArrayList<Dog> list = new ArrayList();
         list.add(new Dog());
         Dog d = list.get(0);
@@ -120,6 +121,27 @@ public class PolimorfismoSA {
         
         Dog dogCasted = (Dog)objectList.get(0);
         //dogCasted.
+        boolean referencia = dogCasted instanceof Dog;
+        System.out.println("dogCasted es de tipo Dog: " + referencia);
+        
+        referencia = objectList.get(1) instanceof Wolf;
+        System.out.println("objectList.get(1) es de tipo Wolf: " + referencia);
+        */
+        /*
+        Dog d1 = new Dog();
+        d1.beFriendly();
+        d1.play();
+        
+        Cat c1 = new Cat();
+        c1.beFriendly();
+        c1.play();
+        */
+        Pet p1 = new Dog();
+        p1.beFriendly();
+        
+        Pet p2 = new Cat();
+        p2.play();
+
     }
     
 }

@@ -3,19 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package polimorfismo.sa;
+package polimorfismo.sb;
 
 /**
  *
  * @author miguelcatalan
  */
-public class Wolf extends Canine {
-
-    public void makeNoise() {
-        System.out.println("Ouhhhh!");
-    }
+public interface Pacient {
     
-    public void eat() {
-        System.out.println("meat!");
-    }
 }

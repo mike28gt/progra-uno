@@ -9,12 +9,20 @@ package polimorfismo.sb;
  *
  * @author miguelcatalan
  */
-public class Dog extends Canine {
+public class Dog extends Canine implements Pet {
     public void makeNoise() {
         System.out.println("Wouf Wouf!!!");
     }
     
     public void eat() {
         System.out.println("I'm eating meet!");
+    }
+    
+    public void beFriendly() {
+        System.out.println("I'm friendly!");
+    }
+    
+    public void play() {
+        System.out.println("I like to play!");
     }
 }

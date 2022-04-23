@@ -9,12 +9,20 @@ package polimorfismo.sa;
  *
  * @author miguelcatalan
  */
-public class Cat extends Feline {
+public class Cat extends Feline implements Pet {
     public void makeNoise() {
         System.out.println("Miau Miau!");
     }
     
     public void eat() {
         System.out.println("meat!");
+    }
+    
+    public void beFriendly() {
+        System.out.println("I'm friendly");
+    }
+    
+    public void play() {
+        System.out.println("I'm playing");
     }
 }
