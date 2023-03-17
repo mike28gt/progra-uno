@@ -58,6 +58,25 @@ public class Cuenta {
 
     public void acreditar(int monto) { }
     public void debitar(int monto) { }
-    public float consultar(int numeroDeCuenta) { return 0.0f; }
+    public float consultar(int numeroDeCuenta) {
+        System.out.println("Se invoca a consulta(int)");
+        return 0.0f; 
+    }
+    
+    //Sobrecarga de métodos:
+    //Métodos con el mismo nombre pero diferente firma dentro de la misma clase
+    //No depende de relaciones de herencia
+    
+    public void consultar() {
+        System.out.println("Se invoca a consultar()");
+    }
+
+    public void consultar(String nombre, int monto) {
+        System.out.println("Se invoca a consultar(String, int)");
+    }
+    
+    public void consultar(Transaccion transaccionObj) {
+        transaccionObj.ejecutar();
+    }
     
 }

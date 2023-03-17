@@ -18,15 +18,31 @@ public class ATMProjectSeccionB {
         
         //Creación de objetos
         Cuenta cuentaObj = new Cuenta("Miguel"); 
-        Cuenta cuentaObj2 = new Cuenta("Alejandro");
+        //Cuenta cuentaObj2 = new Cuenta("Alejandro");
         
-        cuentaObj.numeroDeCuenta = 1;
-        cuentaObj.setNumeroDeCuenta(1);
-        cuentaObj.getNumeroDeCuenta();
+        //cuentaObj.numeroDeCuenta = 1;
+        cuentaObj.setNumeroDeCuenta(98234);
+        //System.out.println(cuentaObj.getNumeroDeCuenta());
         //cuentaObj2.numeroDeCuenta = 2;
         
-        TecladoNumerico tecladoNumerico = new TecladoNumerico();
-        ATM atmObj = new ATM(tecladoNumerico);
+        //TecladoNumerico tecladoNumerico = new TecladoNumerico();
+        //ATM atmObj = new ATM(tecladoNumerico);
+    
+        Retiro retiroObj = new Retiro();
+        //retiroObj.ejecutar(0);
+        
+        Deposito depositoObj = new Deposito();
+        //depositoObj.ejecutar(0);
+        
+        Cuenta obj = new Cuenta("");
+        obj.obtenerSaldo(0);
+        obj.obtenerSaldo("", 0);
+        obj.obtenerSaldo(0, "");
+        
+        
+        //Transaccion transaccionObj = new Transaccion();
+        //transaccionObj.ejecutar(0);
+    
     }
     
 }

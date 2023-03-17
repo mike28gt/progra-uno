@@ -8,8 +8,11 @@ package atmproject.seccionb;
  *
  * @author miguelcatalan
  */
-public class Retiro {
-    int monto;
-    
-    void ejecutar(int monto) { }
+public class Retiro extends Transaccion {
+    /*
+    private int monto;
+    */
+    public void ejecutar(int monto) { 
+        System.out.println("Retiro.ejecutar()");
+    } 
 }

@@ -39,7 +39,12 @@ public class Cuenta {
     }
 
     public void setNumeroDeCuenta(int numeroDeCuenta) {
-        this.numeroDeCuenta = numeroDeCuenta;
+        if (numeroDeCuenta > 9999 && numeroDeCuenta < 100000) {
+            this.numeroDeCuenta = numeroDeCuenta;
+        }
+        else {
+            System.out.println("El numero de cuenta no es válido.");
+        }
     }
 
     public int getNip() {
@@ -52,7 +57,18 @@ public class Cuenta {
     
     
     
-    public int obtenerSaldo(int numeroDeCuenta) { return 0; }
+    public int obtenerSaldo(int numeroDeCuenta) {  
+        System.out.println("Cuenta.obtenerSaldo(int)");
+        return 0;
+    }
+    
+    public void obtenerSaldo(String s1, int i1) {
+        System.out.println("Cuenta.obtenerSaldo(String, int)");
+    }
+    
+    public void obtenerSaldo(int i1, String s1) {
+        System.out.println("Cuenta.obtenerSaldo(int, String)");
+    }
     public void acreditar(int monto) { }
     public void debitar(int monto) { }
 }

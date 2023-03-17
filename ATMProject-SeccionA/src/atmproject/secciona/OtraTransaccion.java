@@ -8,6 +8,6 @@ package atmproject.secciona;
  *
  * @author miguelcatalan
  */
-public class Deposito extends Transaccion {
-
+public class OtraTransaccion extends Transaccion {
+    
 }

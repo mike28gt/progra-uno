@@ -8,8 +8,13 @@ package atmproject.seccionb;
  *
  * @author miguelcatalan
  */
-public class Deposito {
-    int monto;
+    public class Deposito extends Transaccion {
+    /*
+    private int monto;
+    */
+    public void ejecutar(int monto) { 
+        //super.ejecutar(monto);
+        System.out.println("Deposito.ejecutar()");
+    }
     
-    void ejecutar(int monto) { }
 }
