@@ -10,27 +10,33 @@ package atmproject.secciona;
  */
 public class ATM {
     
-    //Dispensador dispensadorObj = new Dispensador();
-    //Pantalla pantallaObj = new Pantalla();
-    //RanuraDeDeposito ranuraDeDepositoObj = new RanuraDeDeposito();
-    //Teclado tecladoObj = new Teclado();
+    private Dispensador dispensadorObj;
+    private Pantalla pantallaObj;
+    private RanuraDeDeposito ranuraDeDepositoObj;
+    private Teclado tecladoObj;
     
-    Dispensador dispensadorObj;
-    Pantalla pantallaObj;
-    RanuraDeDeposito ranuraDeDepositoObj;
-    Teclado tecladoObj;
-    
-    ATM(Teclado tecladoObj) {
-        dispensadorObj = new Dispensador();
-        pantallaObj = new Pantalla();
-        ranuraDeDepositoObj = new RanuraDeDeposito();
-        this.tecladoObj = tecladoObj;
+    public ATM() {
+        this.dispensadorObj = new Dispensador();
+        this.pantallaObj = new Pantalla();
+        this.ranuraDeDepositoObj = new RanuraDeDeposito();
+        this.tecladoObj = new Teclado();
+        
+        this.inicializar();
     }
     
-    void depositar(int monto) { }
-    void acreditar(int monto) { }
-    void mostrarSaldo(int numeroDeCuenta) { }
-    void retirar(int monto) { }
-    void debitar(int monto) { }
-    boolean autenticar(int nip, int numeroDeCuenta) { return true; }
+    private void inicializar() {
+        int numeroDeCuenta;
+        
+        pantallaObj.mostrarMensaje("Bienvenido!\n");
+        pantallaObj.mostrarMensaje("Ingrese su número de cuenta: ");
+        numeroDeCuenta = tecladoObj.recibirEntrada();
+        System.out.println("El numero de cuenta ingresado es: " + numeroDeCuenta);
+    }
+    
+    public void depositar(int monto) { }
+    public void acreditar(int monto) { }
+    public void mostrarSaldo(int numeroDeCuenta) { }
+    public void retirar(int monto) { }
+    public void debitar(int monto) { }
+    public boolean autenticar(int nip, int numeroDeCuenta) { return true; }
 }

@@ -15,9 +15,10 @@ public class ATMProjectSeccionA {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        /*
         Teclado teclado1 = new Teclado();
         ATM atm = new ATM(teclado1);
-        
+        */
         /*
         Cuenta obj = new Cuenta();
         obj.consultar();
@@ -42,7 +43,7 @@ public class ATMProjectSeccionA {
         otraTransaccionObj.getMonto();
         otraTransaccionObj.ejecutar();
 */
-        
+        /*
         Retiro retiroObj = new Retiro();
         //retiroObj.ejecutar();
         
@@ -63,6 +64,12 @@ public class ATMProjectSeccionA {
         Cuenta cuentaObj = new Cuenta();
         cuentaObj.consultar(new Retiro());
         cuentaObj.consultar(new Deposito());
+        */
+        
+        //Pantalla pantallaObj = new Pantalla();
+        //pantallaObj.mostrarMensaje("Hola mundo");
+        
+        ATM atmObj = new ATM();
     
     }
     

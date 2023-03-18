@@ -9,7 +9,8 @@ package atmproject.secciona;
  * @author miguelcatalan
  */
 public class Pantalla {
-    String mensaje;
     
-    void mostrarMensaje(String mensaje) { }
+    public void mostrarMensaje(String mensaje) {
+        System.out.print(mensaje);
+    }
 }
