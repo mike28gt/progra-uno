@@ -4,10 +4,21 @@
  */
 package atmproject.seccionb;
 
+import java.util.Scanner;
+
 /**
  *
  * @author miguelcatalan
  */
 public class TecladoNumerico {
-    int capturarDatos() { return 0; }
+    
+    private Scanner scan;
+    
+    public TecladoNumerico() {
+        scan = new Scanner(System.in);
+    }
+    
+    public int capturarDatos() { 
+        return scan.nextInt();
+    }
 }

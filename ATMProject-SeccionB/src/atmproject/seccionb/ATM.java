@@ -9,22 +9,26 @@ package atmproject.seccionb;
  * @author miguelcatalan
  */
 public class ATM {
-    /*
-    RanuraParaDepositos ranuraParaDepositosObj = new RanuraParaDepositos();
-    TecladoNumerico tecladoNumericoObj = new TecladoNumerico();
-    Pantalla pantallaObj = new Pantalla();
-    Dispensador dispensadorObj = new Dispensador();
-    */
-    RanuraParaDepositos ranuraParaDepositosObj;
-    TecladoNumerico tecladoNumericoObj;
-    Pantalla pantallaObj;
-    Dispensador dispensadorObj;
+
+    private RanuraParaDepositos ranuraParaDepositosObj;
+    private TecladoNumerico tecladoNumericoObj;
+    private Pantalla pantallaObj;
+    private Dispensador dispensadorObj;
     
     //Implementación de relacion de agregación entre la clase TecladoNumerico y ATM
-    ATM(TecladoNumerico tecladoNumericoObj) {
-        ranuraParaDepositosObj = new RanuraParaDepositos();
-        tecladoNumericoObj = tecladoNumericoObj;
-        pantallaObj = new Pantalla();
-        dispensadorObj = new Dispensador();
+    public ATM() {
+        this.ranuraParaDepositosObj = new RanuraParaDepositos();
+        this.tecladoNumericoObj = new TecladoNumerico();
+        this.pantallaObj = new Pantalla();
+        this.dispensadorObj = new Dispensador();
+        
+        this.solicitarDatos();
     }
+    
+    private void solicitarDatos() {
+        pantallaObj.mostrarMensaje("Bienvenido!\n");
+        pantallaObj.mostrarMensaje("Ingrese su número de cuenta: ");
+        int numeroCuenta = tecladoNumericoObj.capturarDatos();
+    }
+    
 }
