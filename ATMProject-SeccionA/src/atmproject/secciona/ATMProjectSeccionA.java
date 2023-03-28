@@ -69,7 +69,13 @@ public class ATMProjectSeccionA {
         //Pantalla pantallaObj = new Pantalla();
         //pantallaObj.mostrarMensaje("Hola mundo");
         
-        ATM atmObj = new ATM();
+        //ATM atmObj = new ATM();
+        
+        BaseDeDatos bd = new BaseDeDatos();
+        //bd.escribir();
+        //bd.leer();
+        //bd.agregarDatos();
+        bd.eliminar();
     
     }
     
