@@ -71,12 +71,17 @@ public class ATMProjectSeccionA {
         
         //ATM atmObj = new ATM();
         
-        BaseDeDatos bd = new BaseDeDatos();
+        //BaseDeDatos bd = new BaseDeDatos();
         //bd.escribir();
         //bd.leer();
         //bd.agregarDatos();
-        bd.eliminar();
+        //bd.eliminar();
     
+        
+        BaseDeDatosSerializada bd = new BaseDeDatosSerializada();
+        //bd.escribir();
+        bd.eliminar();
+        bd.leer();
     }
     
 }

@@ -4,11 +4,13 @@
  */
 package atmproject.seccionb;
 
+import java.io.Serializable;
+
 /**
  *
  * @author miguelcatalan
  */
-public class Cuenta {
+public class Cuenta implements Serializable {
     private float saldo;
     private float saldoFlotante;
     private int numeroDeCuenta;
@@ -16,6 +18,13 @@ public class Cuenta {
     
     public Cuenta(String nombre) {
         System.out.println("Hola " + nombre);
+    }
+    
+    public Cuenta(float saldo, float saldoFlotante, int numeroDeCuenta, int nip) {
+        this.saldo = saldo;
+        this.saldoFlotante = saldoFlotante;
+        this.numeroDeCuenta = numeroDeCuenta;
+        this.nip = nip;
     }
 
     public float getSaldo() {

@@ -4,11 +4,13 @@
  */
 package atmproject.secciona;
 
+import java.io.Serializable;
+
 /**
  *
  * @author miguelcatalan
  */
-public class Cuenta {
+public class Cuenta implements Serializable {
 
     private float saldo;
     private int numeroDeCuenta;
@@ -18,6 +20,12 @@ public class Cuenta {
     //Constructor: inicializa el estado del objeto
     public Cuenta() { 
         System.out.println("Se crea nueva cuenta.");
+    } 
+
+    public Cuenta(float saldo, int numeroDeCuenta, int nip) { 
+        this.saldo = saldo;
+        this.numeroDeCuenta = numeroDeCuenta;
+        this.nip = nip;
     } 
     
     public Cliente getCliente() { 
