@@ -9,16 +9,51 @@ package pkg2024.poo.sb;
  * @author miguelcatalan
  */
 public class Radio {
-    String tipoSonido;
-    float emisora;
-    String frecuencia;
+    private String tipoSonido;
+    private float emisora;
+    private String frecuencia;
     
-    void cambiarEmisora() {}
-    void subirVolumen() {}
-    void bajarVolumen() {}
-    void recepcion() {} 
-    void apagar() {}
-    void encencender() {}
+    public Radio() {
+       this.tipoSonido = "5.1";
+       this.emisora = 96.5f;
+       this.frecuencia = "FM";
+    }
+
+    public String getTipoSonido() {
+        return tipoSonido;
+    }
+
+    public void setTipoSonido(String tipoSonido) {
+        this.tipoSonido = tipoSonido;
+    }
+
+    public float getEmisora() {
+        return emisora;
+    }
+
+    public void setEmisora(float emisora) {
+        if (emisora >= 0.0f && emisora <=200.0f) {
+            this.emisora = emisora;
+        } 
+        else {
+            System.err.println("Emisora " + 
+                    emisora + 
+                    " no válida");
+        }
+    }
+
+    public String getFrecuencia() {
+        return frecuencia;
+    }
+
+    public void setFrecuencia(String frecuencia) {
+        this.frecuencia = frecuencia;
+    }
     
-    
+    public void cambiarEmisora() {}
+    public void subirVolumen() {}
+    public void bajarVolumen() {}
+    public void recepcion() {} 
+    public void apagar() {}
+    public void encencender() {}
 }

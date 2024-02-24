@@ -17,7 +17,23 @@ public class POOSB {
         // TODO code application logic here
         
         int var1 = 12;
-        Radio radio1 = new Radio(); 
+        Radio radio1 = new Radio();
+        radio1.setEmisora(98.1f);
+        radio1.setFrecuencia("FM");
+        radio1.subirVolumen();
+        System.out.println("Emisora radio 1: " + 
+                radio1.getEmisora() + 
+                " " + 
+                radio1.getFrecuencia());
+     
+        Radio radio2 = new Radio();
+        radio2.setEmisora(-100.9f);
+        radio2.setFrecuencia("AM");
+        System.out.println("Emisora radio 2: " + 
+                radio2.getEmisora() + 
+                " " + 
+                radio2.getFrecuencia());
+        
         
     }
     
