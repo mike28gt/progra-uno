@@ -8,7 +8,7 @@ package polimorfismo;
  *
  * @author miguelcatalan
  */
-public class Gyarados extends Pokemon {
+public class Gyarados extends Pokemon implements Agua, Volador {
     
     public Gyarados(String nombre, int nivel) {
         super(nombre, nivel);
@@ -16,5 +16,13 @@ public class Gyarados extends Pokemon {
     
     public void atacar() {
         System.out.println("Gyarados utiliza el atáque Furia Dragón");
+    }
+    
+    public void nadar() {
+        System.out.println("Gyarados nada.");
+    }
+    
+    public void volar() {
+        System.out.println("Gyarados vuela.");
     }
 }
