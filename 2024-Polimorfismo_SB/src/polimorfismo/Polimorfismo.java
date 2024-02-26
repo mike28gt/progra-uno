@@ -46,9 +46,23 @@ public class Polimorfismo {
         pp2.atacar();
         
         Object o1 = new Object();
-        o1.
         
+        Object [] ao1 = new Object[10];
+        ao1[0] = new Gyarados("Gyarados", 1000);
+        ao1[1] = new Bulbasaur("Saur", 10);
+        ao1[2] = new Pikachu("Pika", 10);
+
+        Bulbasaur b1 = (Bulbasaur)ao1[1];
+        b1.atacar();
         
+        Ataque a = new Ataque();
+        a.atacar(new Bulbasaur("d", 12));
+        a.atacar(new Pikachu("d", 12));
+        a.atacar(new Gyarados("d", 12));
+        
+        Agua [] aa1 = new Agua[0];
+        aa1[0] = new Gyarados("", 12);
+        aa1[1] = new Bulbasaur("", 12);
         /*
         Bulbasaur b1 = new Bulbasaur("Bulbasaur", 10);
         b1.atacar();
