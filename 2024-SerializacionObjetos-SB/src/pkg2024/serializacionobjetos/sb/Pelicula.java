@@ -4,11 +4,13 @@
  */
 package pkg2024.serializacionobjetos.sb;
 
+import java.io.Serializable;
+
 /**
  *
  * @author miguelcatalan
  */
-public class Pelicula {
+public class Pelicula implements Serializable {
 
     // Atributos
     private String nombre;
