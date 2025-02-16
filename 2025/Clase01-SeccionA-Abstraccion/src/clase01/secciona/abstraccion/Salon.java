@@ -12,8 +12,16 @@ public class Salon {
     int numero;
     String ubicacion;
     int capacidad;
+
+    public Salon(int numero, String ubicacion, int capacidad) {
+        this.numero = numero;
+        this.ubicacion = ubicacion;
+        this.capacidad = capacidad;
+    }
     
-    void asignarCurso() {
+    
+    
+    void asignar() {
     
     }
     

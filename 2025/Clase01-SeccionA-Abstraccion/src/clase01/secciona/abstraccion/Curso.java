@@ -12,7 +12,25 @@ public class Curso {
     int codigo;
     String nombre;
     String catedratico;
+    Estudiante [] listadoEstudiantes = new Estudiante[50];
+    int indice;
+
+    public Curso(int codigo, String nombre, String catedratico) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.catedratico = catedratico;
+        this.indice = 0;
+    }
+
+    void asignar(Estudiante estudiante) {
+        listadoEstudiantes[indice] = estudiante;
+        indice++;
+    }
     
-    void agregarEstudiante() {
+    
+    public String toString() {
+        return "Código de curso: " + this.codigo +
+               " Nombre: " + this.nombre +
+               " Catedrático: " + this.catedratico;
     }
 }

@@ -15,7 +15,19 @@ public class Estudiante {
     int edad;
     char sexo;
     String carne;
+    Curso [] cursosAsignados = new Curso[5];
+    int indice;
     
+    public Estudiante(String nombre, String apellidos, char sexo, String carne, int edad) {
+        System.out.println("Ejecución del constructor de Estudiante.");
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.sexo = sexo;
+        this.carne = carne;
+        this.edad = edad;
+        this.indice = 0;
+    }
+
     void aprender() {
         System.out.println( nombre + " está aprendiendo");
     }
@@ -24,7 +36,15 @@ public class Estudiante {
         System.out.println(nombre + " está programando");
     }
     
-    void asignar() {
+    void asignar(Curso curso) {
+        curso.asignar(this);
+        cursosAsignados[indice] = curso;
+        indice++;
+    }
     
+    void mostrarCursosAsignados() {
+        for (int i = 0; i < indice ; i++) {
+            System.out.println(cursosAsignados[i]);
+        }
     }
 }
