@@ -8,33 +8,35 @@ package clase01.seccionb.abstraccion;
  *
  * @author miguelcatalan
  */
-public class Estudiante extends Persona {
+public class Catedratico extends Persona {
+    private String facultad;
     private Curso cursosAsignados[] = new Curso[5];
     private int cantidadCursosAsignados;
 
-    public Estudiante(String carne, String nombre, String apellidos, int edad, char sexo) {
-        super(nombre, carne, edad, apellidos, sexo);
+    public Catedratico(String codigoCatedratico, String nombre, String apellidos, int edad, char sexo, String facultad) {
+        super(nombre, codigoCatedratico, edad, apellidos, sexo);
+        this.facultad = facultad;
         this.cantidadCursosAsignados = 0;
     }
-    
-    public void inscribir() {
-        System.out.println("El estudiante se inscribe");    
+
+    public String getFacultad() {
+        return facultad;
+    }
+
+    public void setFacultad(String facultad) {
+        this.facultad = facultad;
     }
     
-    public void asignar(Curso curso) {
+    public void asignarCurso(Curso curso) {
         this.cursosAsignados[cantidadCursosAsignados] = curso;
-        curso.agregarEstudiante(this);
+        curso.setCatedratico(this);
         cantidadCursosAsignados++;
-        System.out.println("El estudiante se asigna");
-    }
-    
-    public void pagar() {
-        System.out.println("El estudiante paga");
+        System.out.println("El catedrático se asigna");
     }
     
     /*
     public String toString() {
-        return "Carne: " + this.carne + 
+        return "Código de Catedrático: " + this.codigoCatedratico + 
                " Nombre: " + this.nombre + 
                " Apellido: " + this.apellidos;
     }

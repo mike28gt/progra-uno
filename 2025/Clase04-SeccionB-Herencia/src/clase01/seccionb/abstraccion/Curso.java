@@ -11,11 +11,11 @@ package clase01.seccionb.abstraccion;
 public class Curso {
     private int codigo;
     private String nombre;
-    private String catedratico;
+    private Catedratico catedratico;
     private Estudiante listadoEstudiantes[] = new Estudiante[50];
     private int cantidadEstudiantes;
     
-    public Curso(int codigo, String nombre, String catedratico) {
+    public Curso(int codigo, String nombre, Catedratico catedratico) {
         System.out.println("Se ejecuta el constructor de curso");
         this.codigo = codigo;
         this.nombre = nombre;
@@ -39,11 +39,11 @@ public class Curso {
         this.nombre = nombre;
     }
 
-    public String getCatedratico() {
+    public Catedratico getCatedratico() {
         return catedratico;
     }
 
-    public void setCatedratico(String catedratico) {
+    public void setCatedratico(Catedratico catedratico) {
         this.catedratico = catedratico;
     }
     

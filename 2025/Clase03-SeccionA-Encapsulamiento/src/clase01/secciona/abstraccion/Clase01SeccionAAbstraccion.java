@@ -4,6 +4,8 @@
  */
 package clase01.secciona.abstraccion;
 
+import java.util.HashSet;
+
 /**
  *
  * @author miguelcatalan
@@ -46,6 +48,14 @@ public class Clase01SeccionAAbstraccion {
         estudiante1.programar();
         
         estudiante2.aprender();
+        
+        //estudiante1.edad = 19;
+        estudiante1.setEdad(-3);
+        estudiante1.setEdad(19);
+        System.out.println(estudiante1.getEdad());
+        System.out.println(estudiante1.getNombre());
+        
+
     }
     
 }

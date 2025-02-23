@@ -16,14 +16,17 @@ public class Clase01SeccionBAbstraccion {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Curso curso1 = new Curso(12, "Programación 1", "Miguel Catalán");
+        Catedratico catedratico1 = new Catedratico("123", "Miguel", "Catalan", 21, 'M', "Facultad de Ingeniería en Sistema de Información y Ciencias de la Computación");
+        Catedratico catedratico2 = new Catedratico("345", "Roman", "Cancinos", 25, 'M', "Facultad de Ingeniería en Sistema de Información y Ciencias de la Computación");
+        
+        Curso curso1 = new Curso(12, "Programación 1", catedratico1);
         /*
         curso1.nombre = "Programación 1";
         curso1.catedratico = "Miguel Catalán";
         curso1.codigo = 12;
         */
         
-        Curso curso2 = new Curso(15, "Derecho Informático", "Román Cancinos");
+        Curso curso2 = new Curso(15, "Derecho Informático", catedratico2);
         /*
         curso2.nombre = "Derecho Informático";
         curso2.catedratico = "Román Cancinos";
@@ -78,8 +81,8 @@ public class Clase01SeccionBAbstraccion {
                             estudiante2.getSexo());
         
         
-        
-        
+        estudiante1.mostrarInformacion();
+        catedratico1.mostrarInformacion();        
         
     }
     
