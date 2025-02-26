@@ -15,7 +15,7 @@ public class Estudiante {
     private int edad;
     private char sexo;
     private String carne;
-    private Curso [] cursosAsignados = new Curso[5];
+    private Curso [] cursosAsignados;
     private int indice;
     
     public Estudiante(String nombre, String apellidos, char sexo, String carne, int edad) {
@@ -26,6 +26,7 @@ public class Estudiante {
         this.carne = carne;
         this.edad = edad;
         this.indice = 0;
+        this.cursosAsignados = new Curso[5];
     }
     
     public void setEdad(int edad) {
@@ -42,27 +43,39 @@ public class Estudiante {
     }
 
     public String getNombre() {
-        return apellidos.toUpperCase() + ", " + nombre.toUpperCase();
+        return apellidos.toUpperCase();
     }
 
     public void setNombre(String nombre) {
-        this.nombre = nombre;
+        if (nombre.trim().length() > 0) {
+            this.nombre = nombre;
+        } else {
+            System.err.println("El nombre del estudiante no puede ser un texto vacío.");
+        }
     }
 
     public String getApellidos() {
-        return apellidos;
+        return apellidos.toUpperCase();
     }
 
     public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
+        if (apellidos.trim().length() > 0) {
+            this.apellidos = apellidos;
+        } else {
+            System.err.println("El apellido del estudiante no puede ser un texto vacío.");
+        }
     }
 
     public char getSexo() {
-        return sexo;
+        return Character.toUpperCase(sexo);
     }
 
     public void setSexo(char sexo) {
-        this.sexo = sexo;
+        if (Character.toUpperCase(sexo) == 'M' || Character.toUpperCase(sexo) == 'F') {
+            this.sexo = sexo;
+        } else {
+            System.err.println("El sexo del estudiante debe ser masculino (M) o femenino (F)");
+        }
     }
 
     public String getCarne() {
@@ -70,11 +83,13 @@ public class Estudiante {
     }
 
     public void setCarne(String carne) {
-        this.carne = carne;
+        if (apellidos.trim().length() > 0) {
+            this.carne = carne;
+        } else {
+            System.err.println("El número de carné no puede ser un texto vacío.");
+        }
     }
     
-    
-
     public void aprender() {
         System.out.println( nombre + " está aprendiendo");
     }

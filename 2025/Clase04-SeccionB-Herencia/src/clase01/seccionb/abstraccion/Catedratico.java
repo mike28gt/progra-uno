@@ -31,7 +31,6 @@ public class Catedratico extends Persona {
         this.cursosAsignados[cantidadCursosAsignados] = curso;
         curso.setCatedratico(this);
         cantidadCursosAsignados++;
-        System.out.println("El catedrático se asigna");
     }
     
     /*

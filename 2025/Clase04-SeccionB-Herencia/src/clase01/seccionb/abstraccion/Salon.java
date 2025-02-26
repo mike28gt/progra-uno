@@ -12,11 +12,15 @@ public class Salon {
     private int numero;
     private String ubicacion;
     private int capacidad;
+    private Curso [] listadoCursos;
+    private int cantidadCursosAsignados;
 
     public Salon(int numero, String ubicacion, int capacidad) {
         this.numero = numero;
         this.ubicacion = ubicacion;
         this.capacidad = capacidad;
+        this.listadoCursos = new Curso[10];
+        this.cantidadCursosAsignados = 0;
     }
 
     public int getNumero() {
@@ -43,8 +47,9 @@ public class Salon {
         this.capacidad = capacidad;
     }
     
-    public void asignarCurso() {
-    
+    public void asignarCurso(Curso curso) {
+        this.listadoCursos[cantidadCursosAsignados] = curso;
+        cantidadCursosAsignados++;
     }
     
 }
