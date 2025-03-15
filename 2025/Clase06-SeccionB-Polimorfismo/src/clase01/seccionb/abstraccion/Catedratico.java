@@ -27,7 +27,7 @@ public class Catedratico extends Persona {
         this.especialidad = especialidad;
     }
     
-    public void asignarCurso(Curso curso) {
+    public void asignar(Curso curso) {
         this.cursosAsignados[cantidadCursosAsignados] = curso;
         curso.setCatedratico(this);
         cantidadCursosAsignados++;
