@@ -8,9 +8,11 @@ package clase01.seccionb.abstraccion;
  *
  * @author miguelcatalan
  */
-public class MiembroUniversidad extends Persona {
+public abstract class MiembroUniversidad extends Persona {
     
     private String facultad;
+    
+    public MiembroUniversidad() { }
     
     public MiembroUniversidad(String nombre, String identificacion, int edad, String apellidos, char sexo, String facultad) {
         super(nombre, identificacion, edad, apellidos, sexo);
@@ -24,8 +26,9 @@ public class MiembroUniversidad extends Persona {
     public void setFacultad(String facultad) {
         this.facultad = facultad;
     }
-    
+/*
     public void mostrarDatos() {
         System.out.println("Miembro de la Universidad - Facultad: " + facultad);
     }
+*/
 }

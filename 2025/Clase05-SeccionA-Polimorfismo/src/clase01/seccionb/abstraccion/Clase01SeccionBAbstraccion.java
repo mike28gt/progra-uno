@@ -18,8 +18,20 @@ public class Clase01SeccionBAbstraccion {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Catedratico catedratico1 = new Catedratico("123", "Miguel", "Catalan", 21, 'M', "Facultad de Ingeniería en Sistema de Información y Ciencias de la Computación");
-        Catedratico catedratico2 = new Catedratico("345", "Roman", "Cancinos", 25, 'M', "Facultad de Ingeniería en Sistema de Información y Ciencias de la Computación");
+        Catedratico catedratico1 = new Catedratico("123", 
+                "Miguel", "Catalan", 
+                21, 
+                'M', 
+                "Facultad de Ingeniería en Sistema de Información y Ciencias de la Computación",
+                "Ingeniero en Sistemas");
+        
+        Catedratico catedratico2 = new Catedratico("345", 
+                "Roman", 
+                "Cancinos", 
+                25, 
+                'M', 
+                "Facultad de Ingeniería en Sistema de Información y Ciencias de la Computación",
+                "Doctor en Derecho");
         
         Curso curso1 = new Curso(12, "Programación 1", catedratico1);
         /*
@@ -39,7 +51,8 @@ public class Clase01SeccionBAbstraccion {
                                                 "Jose",
                                                 "Leal",
                                                 18,
-                                                'M');
+                                                'M',
+                                                "Ingeniería en Sistemas de Información");
         /*
         estudiante1.nombre = "Jose";
         estudiante1.apellidos = "Leal";
@@ -50,7 +63,8 @@ public class Clase01SeccionBAbstraccion {
                                                 "Jackeline",
                                                 "Navichoc",
                                                 18,
-                                                'F');
+                                                'F',
+                                                "Ingeniería en Sistemas de Información");
         //estudiante2.nombre = "Jackeline Lourdes";
         estudiante2.setNombre("Jackeline Lourdes");
         
@@ -90,6 +104,15 @@ public class Clase01SeccionBAbstraccion {
         
         Conferencista c1 = new Conferencista("Elon", "1234567890", 53, "Musk", 'M', LocalDate.of(2025, 3, 15), "Conferencia", catedratico1, "SpaceX");
         c1.mostrarDatos();
+        
+        estudiante1.mostrarDatos();
+        
+        Estudiante e1 = new Estudiante();
+        
+        System.out.println(estudiante1);
+        
+        //Persona p1 = new Persona();
+        //MiembroUniversidad mu1 = new MiembroUniversidad();
         
         
     }

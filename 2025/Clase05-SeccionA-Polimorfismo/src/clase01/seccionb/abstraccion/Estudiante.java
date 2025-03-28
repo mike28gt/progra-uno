@@ -8,12 +8,14 @@ package clase01.seccionb.abstraccion;
  *
  * @author miguelcatalan
  */
-public class Estudiante extends Persona {
+public class Estudiante extends MiembroUniversidad {
     private Curso cursosAsignados[] = new Curso[5];
     private int cantidadCursosAsignados;
 
-    public Estudiante(String carne, String nombre, String apellidos, int edad, char sexo) {
-        super(nombre, carne, edad, apellidos, sexo);
+    public Estudiante() { }
+    
+    public Estudiante(String carne, String nombre, String apellidos, int edad, char sexo, String facultad) {
+        super(nombre, carne, edad, apellidos, sexo, facultad);
         this.cantidadCursosAsignados = 0;
     }
     
@@ -32,16 +34,19 @@ public class Estudiante extends Persona {
         System.out.println("El estudiante paga");
     }
     
-    public void mostrarDatos() {
-        System.out.println("");
-    }
     
+    public void mostrarDatos() {
+        //super.mostrarDatos();
+        System.out.println(" Nombre: " + super.getNombre() + 
+                            " Apellido: " + super.getApellidos() + 
+                            " Edad: " + super.getEdad() +
+                            " Sexo: " + super.getSexo());
+    }
+
+    @Override
     public String toString() {
-        return "";
-        /*
-        return "Carne: " + this.carne + 
-               " Nombre: " + this.nombre + 
-               " Apellido: " + this.apellidos;
-        */
+        return "Carne: " + super.getIdentificacion() + 
+               " Nombre: " + super.getNombre() + 
+               " Apellido: " + super.getApellidos();
     }
 }

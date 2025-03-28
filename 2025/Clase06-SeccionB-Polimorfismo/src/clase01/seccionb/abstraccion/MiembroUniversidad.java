@@ -12,6 +12,8 @@ public class MiembroUniversidad extends Persona {
     
     private String facultad;
     
+    public MiembroUniversidad() { }
+    
     public MiembroUniversidad(String nombre, String identificacion, int edad, String apellidos, char sexo, String facultad) {
         super(nombre, identificacion, edad, apellidos, sexo);
         this.facultad = facultad;
@@ -26,6 +28,6 @@ public class MiembroUniversidad extends Persona {
     }
     
     public void mostrarDatos() {
-        System.out.println("Miembro de la Universidad - Facultad: " + facultad);
+        System.out.print("Miembro de la Universidad - Facultad: " + facultad);
     }
 }

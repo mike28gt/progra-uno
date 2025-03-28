@@ -8,13 +8,13 @@ package clase01.seccionb.abstraccion;
  *
  * @author miguelcatalan
  */
-public class Catedratico extends Persona {
+public class Catedratico extends MiembroUniversidad {
     private String especialidad;
     private Curso cursosAsignados[] = new Curso[5];
     private int cantidadCursosAsignados;
 
-    public Catedratico(String codigoCatedratico, String nombre, String apellidos, int edad, char sexo, String especialidad) {
-        super(nombre, codigoCatedratico, edad, apellidos, sexo);
+    public Catedratico(String codigoCatedratico, String nombre, String apellidos, int edad, char sexo, String facultad, String especialidad) {
+        super(nombre, codigoCatedratico, edad, apellidos, sexo, facultad);
         this.especialidad = especialidad;
         this.cantidadCursosAsignados = 0;
     }
@@ -31,6 +31,14 @@ public class Catedratico extends Persona {
         this.cursosAsignados[cantidadCursosAsignados] = curso;
         curso.setCatedratico(this);
         cantidadCursosAsignados++;
+    }
+    
+    @Override
+    public void mostrarDatos() {
+        System.out.println(" Nombre: " + super.getNombre() + 
+                    " Apellido: " + super.getApellidos() + 
+                    " Edad: " + super.getEdad() +
+                    " Sexo: " + super.getSexo());
     }
     
     public String toString() {
