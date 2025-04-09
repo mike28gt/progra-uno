@@ -10,8 +10,6 @@ package clase01.seccionb.abstraccion;
  */
 public class Auditorio extends Espacio {
 
-    public Auditorio() {}
-    
     public Auditorio(int numero, String ubicacion, int capacidad) {
         super(numero, ubicacion, capacidad);
     }

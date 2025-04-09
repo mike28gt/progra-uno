@@ -5,6 +5,9 @@
 package clase01.seccionb.abstraccion;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.Month;
 import java.util.ArrayList;
 
 /**
@@ -144,6 +147,20 @@ public class Clase01SeccionBAbstraccion {
         personas[2] = new Catedratico();
         personas[3] = new PersonalAdministrativo();
         
+        //int numero, String ubicacion, int capacidad
+        //Conferencista conferencista, String nombre, Auditorio auditorio, LocalDateTime fechaHoraInicio, LocalDateTime fechaHoraFinal
+        Conferencia co1 = new Conferencia(c1, 
+                "Programación Orientada a Objetos", 
+                new Salon(207, "INED", 35), 
+                LocalDateTime.of(2025, Month.MARCH, 29, 11, 0),
+                LocalDateTime.of(2025, Month.MARCH, 29, 13, 0));
+        
+        co1.agregarAsistentes(estudiante2);
+        co1.agregarAsistentes(catedratico1);
+        
+        co1.mostrarAsistentes();
+        
+        System.out.println(co1);
         
         
         /*

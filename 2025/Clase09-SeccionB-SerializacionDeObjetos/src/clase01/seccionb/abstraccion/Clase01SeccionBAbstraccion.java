@@ -151,6 +151,23 @@ public class Clase01SeccionBAbstraccion {
         
         co1.mostrarAsistentes();
         
+        //int codigo, String nombre, Catedratico catedratico
+        Curso c3 = new Curso(15, "Cálculo", catedratico1);
+        
+        //String carne, String nombre, String apellidos, int edad, char sexo, String facultad
+        Estudiante es1 = new Estudiante("7590-24-00001", "Manuel", "Mansilla", 18, 'M', "Ingeniería en Sistemas");
+        Estudiante es2 = new Estudiante("7590-24-00002", "Amada", "Carcamo", 18, 'F', "Ingeniería en Sistemas");
+        Estudiante es3 = new Estudiante("7590-24-00003", "Herbert", "Leal", 18, 'M', "Ingeniería en Sistemas");
+        
+        /*
+        c3.agregarEstudiante(es1);
+        c3.agregarEstudiante(es2);
+        c3.agregarEstudiante(es3);
+        
+        c3.exportarEstudiantes("listado_estudiantes.bin");
+        */
+        
+        c3.importarEstudiantes("listado_estudiantes.bin");
     }
     
 }

@@ -8,6 +8,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.Month;
+import java.util.ArrayList;
 
 /**
  *
@@ -22,20 +23,19 @@ public class Clase01SeccionBAbstraccion {
         // TODO code application logic here
         
         Catedratico catedratico1 = new Catedratico("123", 
-                "Miguel", 
-                "Catalan", 
+                "Miguel", "Catalan", 
                 21, 
                 'M', 
-                "Ingeniero en Ciencias y Sistemas",
-                "Facultad de Ingeniería en Sistema de Información y Ciencias de la Computación");
+                "Facultad de Ingeniería en Sistema de Información y Ciencias de la Computación",
+                "Ingeniero en Sistemas");
         
         Catedratico catedratico2 = new Catedratico("345", 
                 "Roman", 
                 "Cancinos", 
                 25, 
                 'M', 
-                "Doctor en Derecho",
-                "Facultad de Ingeniería en Sistema de Información y Ciencias de la Computación");
+                "Facultad de Ingeniería en Sistema de Información y Ciencias de la Computación",
+                "Doctor en Derecho");
         
         Curso curso1 = new Curso(12, "Programación 1", catedratico1);
         /*
@@ -56,20 +56,19 @@ public class Clase01SeccionBAbstraccion {
                                                 "Leal",
                                                 18,
                                                 'M',
-                                                "Facultad de Ingeniería en Sistemas");
+                                                "Ingeniería en Sistemas de Información");
         /*
         estudiante1.nombre = "Jose";
         estudiante1.apellidos = "Leal";
         */
         estudiante1.asignar(curso1);
         
-        Estudiante estudiante3 = new Estudiante();
         Estudiante estudiante2 = new Estudiante("7590-24-00002", 
                                                 "Jackeline",
                                                 "Navichoc",
                                                 18,
                                                 'F',
-                                                "Facultad de Ingeniería en Sistemas");
+                                                "Ingeniería en Sistemas de Información");
         //estudiante2.nombre = "Jackeline Lourdes";
         estudiante2.setNombre("Jackeline Lourdes");
         
@@ -110,47 +109,83 @@ public class Clase01SeccionBAbstraccion {
         Conferencista c1 = new Conferencista("Elon", "1234567890", 53, "Musk", 'M', LocalDate.of(2025, 3, 15), "Conferencia", catedratico1, "SpaceX");
         c1.mostrarDatos();
         
-        System.out.println(estudiante1);
+        estudiante1.mostrarDatos();
         
-        Object o1 = new Object();
-        
-        /*
-        Persona p1 = new Persona();
-        MiembroUniversidad m1 = new MiembroUniversidad();
-        Visitante v1 = new Visitante();
-        */
-        
-        //AsignarCurso z1 = new AsignarCurso();
-        
-        catedratico1.generar();
+        catedratico1.generarIdInterno();
         
         int i;
-        i = 2;
-       
-        Estudiante e1;
-        e1 = new Estudiante();
+        i = 1;
         
-        MiembroUniversidad m1 = new Estudiante();
-        Persona p1 = new Estudiante();
-        Object o2 = new Estudiante();
+        Estudiante e1 = new Estudiante();
+        MiembroUniversidad e2 = new Estudiante();
+        Persona e3 = new Estudiante();
+        Object e4 = new Estudiante();
         
-        Estudiante e2 = (Estudiante)m1;
-        e2.pagar();
+        e1.pagar();
+        Estudiante e5 = (Estudiante)e2;
+        e5.pagar();
         
-        //Conferencista conferencista, Espacio ubicacion, String nombre, LocalDateTime fechaHoraInicio, LocalDateTime fechaHoFin
-        Conferencia co1 = new Conferencia(c1,
-                a1,
-                "Introducción a POO",
-                LocalDateTime.of(2025, Month.MARCH, 29, 13, 0),
-                LocalDateTime.of(2025, Month.MARCH, 29, 15, 0));
+        AsignarCursos e6 = new Catedratico();
+        AsignarCursos e7 = new Estudiante();
         
-        co1.agregarAsistentes(estudiante1);
+        ArrayList<MiembroUniversidad> lista = new ArrayList();
+        lista.add(new Estudiante());
+        lista.add(new Catedratico());
+        
+        Persona p5;
+        p5 = new PersonalAdministrativo();
+        p5.mostrarDatos();
+        
+        p5 = new Catedratico();
+        p5.mostrarDatos();
+        
+        p5 = new Estudiante();
+        p5.mostrarDatos();
+        
+        Persona [] personas = new Persona[10];
+        personas[1] = new Estudiante();
+        personas[2] = new Catedratico();
+        personas[3] = new PersonalAdministrativo();
+        
+        //int numero, String ubicacion, int capacidad
+        //Conferencista conferencista, String nombre, Auditorio auditorio, LocalDateTime fechaHoraInicio, LocalDateTime fechaHoraFinal
+        Conferencia co1 = new Conferencia(c1, 
+                "Programación Orientada a Objetos", 
+                new Salon(207, "INED", 35), 
+                LocalDateTime.of(2025, Month.MARCH, 29, 11, 0),
+                LocalDateTime.of(2025, Month.MARCH, 29, 13, 0));
+        
+        co1.agregarAsistentes(estudiante2);
         co1.agregarAsistentes(catedratico1);
-        
-        System.out.println(co1);
         
         co1.mostrarAsistentes();
         
+        System.out.println(co1);
+        
+        
+        /*
+        Estudiante e1 = new Estudiante();
+        
+        System.out.println(estudiante1);
+        */
+        //Persona p1 = new Persona();
+        //MiembroUniversidad mu1 = new MiembroUniversidad();
+        
+        //int codigo, String nombre, Catedratico catedratico
+        Curso curso3 = new Curso(15, "Cálculo", catedratico1);
+        
+        //String carne, String nombre, String apellidos, int edad, char sexo, String facultad
+        Estudiante es1 = new Estudiante("7590-24-0001", "Guilmar", "Vazquez", 19, 'M', "Ingeniería en Sistemas");
+        Estudiante es2 = new Estudiante("7590-24-0002", "Alejandra", "Arroyo", 19, 'F', "Ingeniería en Sistemas");
+        Estudiante es3 = new Estudiante("7590-24-0003", "Erick", "Hernandez", 18, 'M', "Ingeniería en Sistemas");
+        /*
+        curso3.agregarEstudiante(es1);
+        curso3.agregarEstudiante(es2);
+        curso3.agregarEstudiante(es3);
+        
+        curso3.exportarEstudiantes();
+        */
+        curso3.importarEstudiantes("lista_estudiantes.bin");
     }
     
 }

@@ -12,8 +12,6 @@ public class Salon extends Espacio {
     private Curso [] listadoCursos;
     private int cantidadCursosAsignados;
 
-    public Salon() {}
-    
     public Salon(int numero, String ubicacion, int capacidad) {
         super(numero, ubicacion, capacidad);
         this.listadoCursos = new Curso[10];
